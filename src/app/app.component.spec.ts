@@ -32,7 +32,7 @@ describe('AppComponent', () => {
   it('should filter the searchterm from the titles', () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    const searchTerm = '684';
+    const searchTerm = 'whe';
     expect(app.filter(searchTerm).length).toBeGreaterThan(1);
   });
 

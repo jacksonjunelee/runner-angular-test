@@ -48,7 +48,8 @@ export class AppComponent {
   filter(searchTerm: string): Title[] {
     if (searchTerm.length >= 3) {
       return this.options.filter(
-        (option) => option.full_name.toLowerCase().indexOf(searchTerm) === 0
+        (option) =>
+          option.full_name.toLowerCase().indexOf(searchTerm.toLowerCase()) === 0
       );
     }
     return [];
